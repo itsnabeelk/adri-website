@@ -94,6 +94,14 @@ function scriptJs(){
             $('.hamenu .menu-links .main-menu .sub-menu, .hamenu .menu-links .main-menu .sub-menu2').slideUp();
     
         });
+
+        $('.hamenu .click-close, .one-scroll .menu-links .main-menu > li').on('click', function () {
+    
+            $('.hamenu').removeClass("open").delay(300).animate({ left: "-100%" });
+            $('.hamenu .menu-links .main-menu .dmenu, .hamenu .menu-links .main-menu .sub-dmenu').removeClass("dopen");
+            $('.hamenu .menu-links .main-menu .sub-menu, .hamenu .menu-links .main-menu .sub-menu2').slideUp();
+    
+        });
     
         $('.hamenu .menu-links .main-menu > li').on('mouseenter', function () {
             $(this).removeClass('hoverd').siblings().addClass('hoverd');
