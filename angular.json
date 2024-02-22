@@ -35,9 +35,21 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/css/satoshi.css",
+              "src/assets/css/plugins.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery-3.6.0.min.js",
+              "src/assets/js/jquery-migrate-3.4.0.min.js",
+              "src/assets/js/plugins.js",
+              "src/assets/js/gsap.min.js",
+              "src/assets/js/ScrollSmoother.min.js",
+              "src/assets/js/ScrollTrigger.min.js",
+              "src/assets/js/smoother-script.js",
+              "src/assets/js/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,5 +113,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1833628c-29b8-4215-9b1b-bc0b2a15bafd"
   }
 }
