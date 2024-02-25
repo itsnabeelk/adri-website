@@ -12,6 +12,7 @@ import { TermsComponent } from './pages/terms/terms.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { CareerComponent } from './pages/career/career.component';
 import { CareerInnerComponent } from './pages/career/career-inner/career-inner.component';
+import { TranslateComponent } from './pages/translate/translate.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CareerInnerComponent } from './pages/career/career-inner/career-inner.c
     PrivacyComponent,
     CareerComponent,
     CareerInnerComponent,
+    TranslateComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,18 +1,4 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Geekfolio
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-/* Variables
------------------------------------------------------------------*/
-/* Typography
------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -3223,7 +3209,27 @@ body.loaded {
 .navbar.change.nav-scroll .menu-icon {
   color: #1a1a1a;
 }
-
+.navbar.change.nav-scroll .navbar-nav .nav-link,
+.navbar.change.nav-scroll .menu-icon {
+  display: flex;
+}
+.btn-platform-top {
+display: none;
+}
+.lang-btn {
+  color: #fff;
+  font-weight: 600;
+}
+.nav-scroll .lang-btn {
+  color: #000;
+}
+.nav-scroll .btn-platform-top {
+  background: #000;
+  color: #fff;
+  padding: 9px 20px;
+  border-radius: 10px;
+  display: block !important;
+}
 .navbar.change.nav-scroll .search-form .search-icon {
   color: #1a1a1a;
 }
@@ -3751,6 +3757,8 @@ body.loaded {
   -webkit-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .hamenu .menu-links .main-menu .sub-menu li a:hover {
@@ -8428,11 +8436,56 @@ footer.clean-footer.crev:before {
 
 .slider {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.slider video {
+ height: 100vh;
+ object-fit: cover;
+ position: relative;
+}
+.content-banner{
+  position: absolute;
+  z-index: 2;
+}
+.content-banner h1 {
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 6rem;
+}
+.btn-platform {
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 22px;
+  background: #00a75a;
+  width: fit-content;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s ease-in-out;
+}
+.btn-platform:hover{
+color: #ffffffb9;
+background: #000;
+}
+.overlay {
+  position: absolute;
+  background: #00000047;
+  left: 0;
+  right: 0;
+  width: 100%;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+}
 .slider .parallax-slider {
   position: relative;
 }
+
+
 
 .slider .parallax-slider .swiper-slide {
   position: relative;
@@ -10327,6 +10380,34 @@ footer.clean-footer.crev:before {
     left: 5vw !important;
     top: 5vh !important;
   }
+}
+
+@media (max-width:1080px) {
+  .content-banner h1 {
+    font-size: 5rem;
+}
+}
+@media (max-width:980px) {
+  .content-banner h1 {
+    font-size: 4rem;
+}
+.btn-platform {
+  font-size: 18px;
+}
+}
+@media (max-width:780px) {
+  .content-banner h1 {
+    font-size: 2.5rem;
+}
+.btn-platform {
+  font-size: 15px;
+}
+.slider video {
+  height: 80vh;
+ }
+ .nav-scroll .btn-platform-top {
+  font-size: 12px;
+}
 }
 
 /* ====================== [ End Responsive ] ====================== */

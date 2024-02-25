@@ -1,0 +1,79 @@
+.animated-text {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  position: relative;
+  animation: wiping 8s infinite;
+}
+
+.animated-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  animation: erasing 8s infinite;
+}
+
+@keyframes wiping {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+  55% {
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes erasing {
+  0% {
+    width: 100%;
+    opacity: 1;
+  }
+  10% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+
+
+.content-banner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.slide-in {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.slide-out {
+  opacity: 0;
+  transform: translate(-50%, -150%);
+}

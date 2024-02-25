@@ -1,5 +1,60 @@
 <main class="main-bg">
     <header class="slider slider-prlx">
+        <div class="text-slider">
+            <div id="content-1" class="content-banner slide-in">
+              <h1>
+                <span>Your Gateway to</span><br>
+                <span class="animated-text">Arabic Knowledge!</span>
+              </h1>
+              <div>
+                <a [routerLink]="['translate']"
+                  class="d-flex align-items-end justify-content-center btn-platform align-items-center gap-3">
+                  Platform
+                  <span class="ti-arrow-top-right"></span>
+                </a>
+              </div>
+            </div>
+            <div id="content-2" class="content-banner slide-out">
+              <h1>
+                <span>Your Gateway to</span><br>
+                <span class="animated-text">Arabic Knowledge!</span>
+              </h1>
+              <div>
+                <a [routerLink]="['translate']"
+                  class="d-flex align-items-end justify-content-center btn-platform align-items-center gap-3">
+                Translate
+                  <span class="ti-arrow-top-right"></span>
+                </a>
+              </div>
+            </div>
+            <div id="content-3" class="content-banner slide-out">
+                <h1>
+                  <span>Your Gateway to</span><br>
+                  <span class="animated-text">Arabic Knowledge!</span>
+                </h1>
+                <div>
+                  <a [routerLink]="['translate']"
+                    class="d-flex align-items-end justify-content-center btn-platform align-items-center gap-3">
+                  Plagiarism 
+                    <span class="ti-arrow-top-right"></span>
+                  </a>
+                </div>
+              </div>
+              <div id="content-4" class="content-banner slide-out">
+                <h1>
+                  <span>Your Gateway to</span><br>
+                  <span class="animated-text">Arabic Knowledge!</span>
+                </h1>
+                <div>
+                  <a [routerLink]="['translate']"
+                    class="d-flex align-items-end justify-content-center btn-platform align-items-center gap-3">
+                  GEN AI 
+                    <span class="ti-arrow-top-right"></span>
+                  </a>
+                </div>
+              </div>
+          </div>
+        <div class="overlay"></div>
         <video loop muted playsinline autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true" width="100%">
             <source src="assets/imgs/banner/banner1.mp4" type="video/mp4">
         </video>
