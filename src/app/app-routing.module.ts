@@ -10,6 +10,7 @@ import { FaqComponent } from './pages/faq/faq.component';
 import { PrivacyComponent } from './pages/privacy/privacy.component';
 import { TermsComponent } from './pages/terms/terms.component';
 import { TranslateComponent } from './pages/translate/translate.component';
+import { TranslatePriceComponent } from './pages/translate/translate-price/translate-price.component';
 
 const routes: Routes = [
   {
@@ -56,6 +57,10 @@ const routes: Routes = [
     path: 'translate',
     component:TranslateComponent,
   },
+  {
+    path: 'translate-price',
+    component:TranslatePriceComponent,
+  }
 ];
 
 @NgModule({

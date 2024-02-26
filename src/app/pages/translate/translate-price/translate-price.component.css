@@ -1,0 +1,68 @@
+.price-heading h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+}
+
+.price-heading h6 {
+  font-weight: 400;
+  font-size: 20px;
+  color: #1aba89;
+}
+
+.card{
+  padding: 50px !important;
+}
+.card h5{
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.card span{
+  font-weight: 800;
+  margin-bottom: 22px;
+  font-size: 100px;
+  color: #000 !important;
+}
+.card h6{
+  font-weight: 600;
+  font-size: 18px;
+  color: #2dc093;
+}
+.card .txt-expect{
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.card p{
+  font-size: 12px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+sub, sup {
+  position: relative;
+  font-size: 50px;
+  line-height: 0;
+  vertical-align: baseline;
+  margin: 10px;
+}
+
+.total-word h1{
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.total-word span{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}

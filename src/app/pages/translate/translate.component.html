@@ -6,8 +6,37 @@ data-overlay-dark="4">
         <div class="mt-15">
             <a href="home-main.html">Home</a>
             <span class="padding-rl-20">|</span>
-            <span class="main-color">Privacy Policy</span>
+            <span class="main-color">Translate</span>
         </div>
     </div>
 </div>
 </header>
+
+<section class="services-details section-padding">
+    <div class="container">
+        <div class="sec-head text-center mb-80">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div>
+                        <h1 class="mb-25">Get Instant Quotation For Your Translation</h1>
+                        <h6 class="sub-title main-color mb-15">Upload your PDF here to get a prompt review by our team of Experts..</h6>
+                    </div>
+                    <form action="#">
+                        <div class="input-file-container">
+                          <input class="input-file" id="my-file" type="file">
+                          <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+                        </div>
+                        <p class="file-return"></p>
+                        <button type="submit" class="submit-button" [disabled]="isLoading">
+                          <span *ngIf="isLoading">Loading...</span>
+                          <span *ngIf="!isLoading">Submit</span>
+                        </button>
+                      </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
